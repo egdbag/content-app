@@ -1,0 +1,20 @@
+.Profile {
+    text-align: right;
+    display: flex;
+}
+
+.ProfilePicture {
+    height: 90; 
+    width: 90;
+}
+
+.ProfileName {
+    text-align: left;
+    display: block;
+    margin-top: 12px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
