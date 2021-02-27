@@ -42,7 +42,7 @@ class Article extends Component {
 
 
     return <React.Fragment>
-
+      <TextField id="standard-basic" label="Standard" />
       <div>
         {(this.state as any).blocks.map((x: any) => {
           return x
