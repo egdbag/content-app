@@ -7,7 +7,7 @@ function ProfileMock() {
     return (
         <div className="Profile">
             <div className="ProfilePicture">
-                <img style={{height: 120,  width: 120}} src={DefaultProfilePic} />
+                <img style={{ height: 120, width: 120 }} src={DefaultProfilePic} />
             </div>
             <div className="ProfileName">
                 <p>Firstname</p>
