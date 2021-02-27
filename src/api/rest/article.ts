@@ -20,3 +20,21 @@ export const getAllTags = () => {
 
     }
 }
+
+export const saveArticle = () => {
+
+    return makeRequest({
+        url: '/articles',
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        data: JSON.stringify({
+            title: "Test_1",
+            hashTags: [
+                "test1",
+                "test2"
+            ]
+        })
+    });
+}
