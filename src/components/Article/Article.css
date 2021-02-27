@@ -5,9 +5,11 @@
 .article__text_block {
     display: flex;
     flex-direction: column-reverse;
+    width: 100%;
 }
 
 .article__text_block {
     display: flex;
     flex-direction: column-reverse;
+    width: 100%;
 }
