@@ -1,20 +1,15 @@
-.Profile {
+.profile {
     text-align: right;
     display: flex;
 }
 
-.ProfilePicture {
-    height: 90; 
-    width: 90;
-}
-
-.ProfileName {
+.profile__name {
     text-align: left;
     display: block;
-    margin-top: 12px;
 }
 
-p {
+.profile p {
     margin: 0;
     padding: 0;
+    margin-left: 10px;
 }

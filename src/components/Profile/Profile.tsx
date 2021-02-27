@@ -1,15 +1,13 @@
 import React from 'react';
-import './Profile.css';
+import Avatar from '@material-ui/core/Avatar';
 import DefaultProfilePic from './account_box-24px.svg'
-
+import './Profile.css';
 
 function ProfileMock() {
     return (
-        <div className="Profile">
-            <div className="ProfilePicture">
-                <img style={{ height: 120, width: 120 }} src={DefaultProfilePic} />
-            </div>
-            <div className="ProfileName">
+        <div className="profile">
+            <Avatar variant="rounded" alt="Mock"/>
+            <div className="profile__name">
                 <p>Firstname</p>
                 <p>Lastname</p>
             </div>
