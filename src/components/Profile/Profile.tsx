@@ -15,8 +15,8 @@ function ProfileMock() {
             <div className="profile__user">
                 <Avatar variant="rounded" alt="Mock"/>
                 <div className="profile__user__name">
-                    <p>Firstname</p>
-                    <p>Lastname</p>
+                    <p>Никита</p>
+                    <p>Кукушкин</p>
                 </div>
             </div>
             <div className="profile__achieve">
