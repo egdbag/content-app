@@ -1,0 +1,19 @@
+.menu {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.menu__element {
+    margin: 17px;
+    display: flex;
+}
+
+.menu__element_icon {
+    width: 10px;
+}
+
+.menu__element p {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}

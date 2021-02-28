@@ -1,20 +1,27 @@
-.Profile {
+.profile__user {
     text-align: right;
     display: flex;
 }
 
-.ProfilePicture {
-    height: 90; 
-    width: 90;
-}
-
-.ProfileName {
+.profile__user__name {
     text-align: left;
     display: block;
-    margin-top: 12px;
 }
 
-p {
+.profile__achieve {
+    padding-right: 20px;
+    padding-left: 40px;
+    display: inline-block;
+    justify-content: right;
+    flex-wrap: 'wrap';
+}
+
+.profile__achieve__element {
+    margin: 1px;
+}
+
+.profile p {
     margin: 0;
     padding: 0;
+    margin-left: 10px;
 }
