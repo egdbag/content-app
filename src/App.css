@@ -71,7 +71,7 @@ body {
 }
 #main > nav, 
 #main > aside {
-  background: beige;
+  background: #f5f5f5;
 }
 #main > nav {
   order: -1;
