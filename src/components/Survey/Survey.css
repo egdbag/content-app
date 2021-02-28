@@ -1,0 +1,11 @@
+.survey_container {
+    display: flex;
+}
+
+.survey_container__question{
+    width: 100%;
+}
+
+.survey_container__input{
+    width: 100%;
+}

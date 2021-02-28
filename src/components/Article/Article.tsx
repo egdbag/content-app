@@ -11,13 +11,16 @@ import FormatColorTextIcon from '@material-ui/icons/FormatColorText';
 import ImageIcon from '@material-ui/icons/Image';
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 import './Article.css'
-class Article extends Component {
+import SurveyQuestion from '../Survey/SurveyQuestion';
+
+class Article extends Component<any> {
 
   public static propTypes: any;
+  public title: any;
 
   constructor(props: any) {
     super(props);
-    this.state = { blocks: [] };
+    this.state = { blocks: [], values: [] };
   }
 
 
@@ -45,16 +48,42 @@ class Article extends Component {
     );
     this.setState({ blocks: a })
   };
+  onTextChange = (event: any) => {
+    var id = event.target.id;
+    var val = event.target.value;
 
+    var values = (this.state as any).values;
+
+    var res = values.find((x: any) => x.id == id);
+    if (res != undefined)
+      res.value = val;
+    else
+      values.push({ id: id, value: val });
+    this.setState({ values: values });
+
+    (this.props as any).t(values);
+
+  }
 
   handleTextClick = () => {
     var a = (this.state as any).blocks;
-    a.push(<TextField id="outlined-basic" label="Outlined" variant="outlined" className="article__text_block" />
+    var count = a.length;
+    a.push(<TextField id={"outlined-basic-" + count} label="Outlined" variant="outlined" className="article__text_block"
+      onChange={this.onTextChange}
+    />
+    );
+    this.setState({ blocks: a })
+
+  }
+
+  handleSurveyClick = () => {
+
+    var a = (this.state as any).blocks;
+    var count = a.length;
+    a.push(<SurveyQuestion></SurveyQuestion>
     );
     this.setState({ blocks: a })
   }
-
-
   handleImgClick = () => {
 
     /*  saveArticle().then((response) => response.json())
@@ -93,7 +122,7 @@ class Article extends Component {
 
 
     return <React.Fragment>
-      <TextField id="standard-basic" label="Заголовок" className="article__title" />
+      <TextField id="standard-basic" label="Заголовок" className="article__title" value={this.title} />
 
       <div>
         {(this.state as any).blocks.map((x: any) => {
@@ -136,7 +165,7 @@ class Article extends Component {
 
 
 
-              <MenuItem onClick={popupState.close}>
+              <MenuItem onClick={this.handleSurveyClick}>
                 <ListItemIcon>
                   <FormatListBulletedIcon fontSize="small" />
                 </ListItemIcon>
