@@ -29,7 +29,7 @@ export class SurveyQuestion extends Component<any> {
         var count = a.length;
         a.push(
             <div className="survey_container__question">
-                <TextField id={"outlined-basic-" + count} label="Вопрос" variant="outlined"
+                <TextField id={"outlined-basic-" + count} label="Вопр" variant="outlined"
                     onChange={this.onTextChange} className="survey_container__input "
                 />
                 <SurveyAnswer></SurveyAnswer>
