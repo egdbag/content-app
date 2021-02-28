@@ -31,7 +31,7 @@ function Menu() {
             <Link href="#" onClick={handleOpenMyArticles}>
                 <div className="menu__element">
                     <LibraryBooksIcon className="menu__element__icon"/>
-                    <p>My articles</p>
+                    <p>Мои публикации</p>
                 </div>
             </Link>
             <Modal open={openMyArticles} onClose={handleCloseMyArticles} aria-labelledby="simple-modal-title" aria-describedby="simple-modal-description">{<ArticleList/>}</Modal>
@@ -39,7 +39,7 @@ function Menu() {
             <Link href="#" onClick={handleOpenBookMarks}>
                 <div className="menu__element">
                     <BookmarksIcon className="menu__element__icon"/>
-                    <p>My bookmarks</p>
+                    <p>Избранные публикации</p>
                 </div>
             </Link>
             <Modal open={openBookMarks} onClose={handleCloseBookMarks} aria-labelledby="simple-modal-title" aria-describedby="simple-modal-description">{<BookList/>}</Modal>

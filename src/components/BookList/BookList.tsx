@@ -54,11 +54,11 @@ class BookList extends Component {
     ];
 
     public rows = [
-        createData('Frozen yoghurt', 10),
-        createData('Ice cream sandwich', 15),
-        createData('Eclair', 17),
-        createData('Cupcake', 5),
-        createData('Gingerbread', 5),
+        createData('Как приготовить замороженный йогурт', 10),
+        createData('Все о Docker', 15),
+        createData('Как выбрать подарок на 8 марта', 17),
+        createData('Бухгалтерский учет: как учитывать все', 5),
+        createData('"Алло, это Сбанк, вы совершали операцию на суммму...?" как на самом деле выглят колл-центры банков', 5),
     ];
 
     render() {
@@ -108,7 +108,7 @@ class BookList extends Component {
                         <Table size="small" aria-label="a dense table">
                             <TableHead>
                                 <TableRow>
-                                    <TableCell align="center">Контент</TableCell>
+                                    <TableCell align="center">Название публикации</TableCell>
                                     <TableCell align="center">Продолжительность</TableCell>
                                 </TableRow>
                             </TableHead>
@@ -124,7 +124,7 @@ class BookList extends Component {
                             </TableBody>
                         </Table>
                     </TableContainer>
-                    <Button variant="contained" color="primary">ДОБАВИТЬ НОВУЮ СТАТЬЮ</Button>
+                    <Button variant="contained" color="primary">ДОБАВИТЬ НОВУЮ ПУБЛИКАЦИЮ В ИЗБРАННОЕ</Button>
                 </Paper>
             </div>
         </React.Fragment>
