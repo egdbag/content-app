@@ -6,14 +6,16 @@
 .profile__user__name {
     text-align: left;
     display: block;
+    padding-left: 10px;
 }
 
 .profile__achieve {
-    padding-right: 20px;
-    padding-left: 40px;
-    display: inline-block;
+    /* padding-right: 20px;
+    padding-left: 40px; */
+    display: flex;
     justify-content: right;
     flex-wrap: 'wrap';
+    flex-direction: column;
 }
 
 .profile__achieve__element {
@@ -24,4 +26,13 @@
     margin: 0;
     padding: 0;
     margin-left: 10px;
+}
+
+.avatar{
+    height: 100px !important;
+    width: 100px !important;
+}
+
+.profile__achieve_padding{
+    padding-top: 10px;
 }

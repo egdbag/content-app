@@ -8,24 +8,25 @@ import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import SearchIcon from '@material-ui/icons/Search';
 import StarIcon from '@material-ui/icons/Star';
 import './Profile.css';
+import imageSrc from './30.png';
 
 function ProfileMock() {
     return (
         <div className="profile">
             <div className="profile__user">
-                <Avatar variant="rounded" alt="Mock"/>
+                <Avatar className="avatar" alt="Mock" src={imageSrc} />
                 <div className="profile__user__name">
-                    <p>Никита</p>
-                    <p>Кукушкин</p>
+                    <p>Бедняга Бедолага</p>
+                    <div className="profile__achieve profile__achieve_padding">
+                        <Tooltip title='Достижение: написать 5 статей'>
+                            <Chip className="profile__achieve__element" avatar={<Avatar><VisibilityIcon /></Avatar>} label="Оракул" color="secondary" />
+                        </Tooltip>
+                        <Tooltip title='Достижение: более 20 сохранений в избранное'>
+                            <Chip className="profile__achieve__element" avatar={<Avatar><BookmarkBorderIcon /></Avatar>} variant="outlined" label="Избранный" color="primary" />
+                        </Tooltip>
+                    </div>
+
                 </div>
-            </div>
-            <div className="profile__achieve">
-                <Tooltip title='Достижение: написать 5 статей'>
-                    <Chip className="profile__achieve__element" avatar={<Avatar><VisibilityIcon/></Avatar>} label="Оракул" color="secondary" />
-                </Tooltip>
-                <Tooltip title='Достижение: более 20 сохранений в избранное'>
-                    <Chip className="profile__achieve__element" avatar={<Avatar><BookmarkBorderIcon/></Avatar>} variant="outlined" label="Избранный" color="primary" />
-                </Tooltip>
             </div>
         </div>
     )

@@ -68,7 +68,7 @@ class Article extends Component<any> {
   handleTextClick = () => {
     var a = (this.state as any).blocks;
     var count = a.length;
-    a.push(<TextField id={"outlined-basic-" + count} label="Outlined" variant="outlined" className="article__text_block"
+    a.push(<TextField id={"outlined-basic-" + count} label="Текстовое поле" variant="outlined" className="article__text_block"
       onChange={this.onTextChange}
     />
     );
@@ -122,7 +122,7 @@ class Article extends Component<any> {
 
 
     return <React.Fragment>
-      <TextField id="standard-basic" label="Заголовок" className="article__title" value={this.title} />
+      <TextField id="standard-basic" label="Заголовок статьи" className="article__title" value={this.title} />
 
       <div>
         {(this.state as any).blocks.map((x: any) => {
@@ -138,11 +138,11 @@ class Article extends Component<any> {
       <PopupState variant="popover" popupId="demo-popup-menu">
         {(popupState) => (
           <React.Fragment>
-
-            <IconButton aria-label="delete" {...bindTrigger(popupState)}>
-              <AddIcon fontSize="large" />
-              {/*               <Typography variant="inherit"></Typography>
- */}            </IconButton>
+            <div className="add-button">
+              <IconButton aria-label="delete" className="add-button" {...bindTrigger(popupState)}>
+                <AddIcon fontSize="large" />
+              </IconButton>
+            </div>
 
             {/* <Button variant="contained" color="primary" {...bindTrigger(popupState)}>
               Open Menu

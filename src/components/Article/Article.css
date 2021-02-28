@@ -1,15 +1,16 @@
 .article__title{
     width: 100%;
+    margin-bottom: 20px !important;
 }
 
 .article__text_block {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
+    margin-bottom: 10px !important;
 }
 
-.article__text_block {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
+.add-button{
+    DISPLAY: FLEX !important;
+    margin-left: auto  !important;
 }

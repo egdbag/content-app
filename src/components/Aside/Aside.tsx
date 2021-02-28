@@ -11,6 +11,7 @@ import FormatColorTextIcon from '@material-ui/icons/FormatColorText';
 import ImageIcon from '@material-ui/icons/Image';
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+import './Aside.css'
 
 class Aside extends Component<any> {
 
@@ -73,8 +74,8 @@ class Aside extends Component<any> {
             <Button
                 variant="contained"
                 onClick={this.clickHandle}
-                color="default"
-
+                color="secondary"
+                className="publish-button"
                 startIcon={<CloudUploadIcon />}
             >
                 Опубликовать
@@ -103,6 +104,9 @@ class Aside extends Component<any> {
           </Button>
                 </DialogActions>
             </Dialog>
+            <div>
+                {/*   <img src={imageSrc}></img> */}
+            </div>
         </div>
     }
 
