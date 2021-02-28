@@ -51,9 +51,6 @@ export class SurveyAnswer extends Component<any> {
                 }
 
             </div>
-
-
-
         </div>
 
 
